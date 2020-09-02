@@ -17,6 +17,17 @@ public class Driver {
 		
 		triangle(base, height, area);
 		
+		// This here is:
+		// default no-args constructor
+		Triangle t = new Triangle();
+		t.setBase(base);
+		t.setHeight(height);
+		int myArea = t.getArea();
+		triangle(base, height, myArea);
+		t.setHeight(4);
+		triangle(base, height, myArea);
+
+		
 
 	}
 
