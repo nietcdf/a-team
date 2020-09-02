@@ -5,6 +5,17 @@ public class Triangle {
 	private int height;
 
 	
+	public Triangle() {
+		System.out.println("hello");
+		int x;
+	}
+	
+	public Triangle(int base, int height) {
+		super();
+		this.base = base;
+		this.height = height;
+	}
+	
 	public int getBase() {
 		return base;
 	}
