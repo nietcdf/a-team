@@ -24,7 +24,9 @@ public class Driver {
 		t.setHeight(height);
 		int myArea = t.getArea();
 		triangle(base, height, myArea);
-		t.setHeight(4);
+		height = 4;
+		t.setHeight(height);
+		myArea = t.getArea();
 		triangle(base, height, myArea);
 
 		
