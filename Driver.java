@@ -20,14 +20,12 @@ public class Driver {
 		// This here is:
 		// default no-args constructor
 		Triangle t = new Triangle();
-		t.setBase(base);
-		t.setHeight(height);
-		int myArea = t.getArea();
-		triangle(base, height, myArea);
+		System.out.println(t);
+		
 		height = 4;
 		t.setHeight(height);
-		myArea = t.getArea();
-		triangle(base, height, myArea);
+		System.out.println(t);
+
 
 		
 
