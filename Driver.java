@@ -1,5 +1,10 @@
 
 public class Driver {
+	public static void triangle(int base, int height, int area) {
+		System.out.println("Base: " + base);
+		System.out.println("Height: " + height);
+		System.out.println("Area: " + area);
+	}
 
 	public static void main(String[] args) {
 		int x = 5;
@@ -10,14 +15,9 @@ public class Driver {
 		int height = 2;
 		int area = base * height / 2;
 		
-		System.out.println("Base: " + base);
-		System.out.println("Height: " + height);
-		System.out.println("Area: " + area);
+		triangle(base, height, area);
 		
-		height = 4;
-		System.out.println("Base: " + base);
-		System.out.println("Height: " + height);
-		System.out.println("Area: " + area);
+
 	}
 
 }
