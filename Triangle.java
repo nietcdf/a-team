@@ -6,18 +6,26 @@ public class Triangle {
 	// i want my default triangle to have area equal to 1
 	private static int INITIAL_BASE = 1;
 	private static int INITIAL_HEIGHT = 2;
+	private static int counter = 0;
 
 	
 	public Triangle() {
 		this(INITIAL_BASE, INITIAL_HEIGHT);
+
 	}
 	
 	public Triangle(int base, int height) {
-		super();
 		this.base = base;
 		this.height = height;
+		counter++;
 	}
 	
+	public static int getCounter() {
+		return counter;
+	}
+
+
+
 	@Override
 	public String toString() {
 		return "Triangle [base=" 

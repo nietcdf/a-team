@@ -17,6 +17,7 @@ public class Driver {
 		
 		triangle(base, height, area);
 		
+		
 		// This here is:
 		// default no-args constructor
 		Triangle t = new Triangle();
@@ -25,6 +26,7 @@ public class Driver {
 		height = 4;
 		t.setHeight(height);
 		System.out.println(t);
+		System.out.println("number of triangles:" + t.getCounter()); 
 
 
 		
