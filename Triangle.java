@@ -1,8 +1,8 @@
 
-public class Triangle {
+public class Triangle extends Shape {
 	// create info about a triangle
-	private int base;
-	private int height;
+	private float base;
+	private float height;
 	// i want my default triangle to have area equal to 1
 	private static int INITIAL_BASE = 1;
 	private static int INITIAL_HEIGHT = 2;
@@ -14,7 +14,7 @@ public class Triangle {
 
 	}
 	
-	public Triangle(int base, int height) {
+	public Triangle(float base, float height) {
 		this.base = base;
 		this.height = height;
 		counter++;
@@ -37,20 +37,20 @@ public class Triangle {
 				+ Triangle.getCounter() + "]";
 	}
 
-	public int getBase() {
+	public float getBase() {
 		return base;
 	}
 	public void setBase(int base) {
 		this.base = base;
 	}
-	public int getHeight() {
+	public float getHeight() {
 		return height;
 	}
 	public void setHeight(int height) {
 		this.height = height;
 	}
-	public int getArea() {
-		return base * height / 2;
+	public float getArea() {
+		return base * height * 0.5f;
 
 	}
 

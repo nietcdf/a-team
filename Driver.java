@@ -45,7 +45,7 @@ public class Driver {
 		int j = ++i;
 		int k = i++;
 		for (int ii = 0; ii < NUM_ELEMENTS-2; ii++) {
-			xs[ii] = Math.PI;
+			xs[ii] =7; 
 		}
 		
 		
