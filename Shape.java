@@ -1,5 +1,5 @@
 public abstract class Shape {
-    private float area;
+    protected float area;
     public Shape(){
         area = 0.0f;
 

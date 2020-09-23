@@ -1,3 +1,4 @@
+import java.util.*;
 
 public class Driver {
 	
@@ -35,6 +36,12 @@ public class Driver {
 		for (int index = 0; index <= l; ++ index)
 			y[index] = trs[index];
 
+	ArrayList<Rectangle> recs = new ArrayList<>();
+	for (int i = 0; i < 5; ++i){
+		recs.add(new Rectangle(2.0f, 4.0f));
 	}
+
+	recs.forEach(p -> System.out.println(p));
+}
 
 }
