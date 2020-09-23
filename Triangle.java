@@ -33,7 +33,8 @@ public class Triangle {
 				+ ", height=" 
 				+ height 
 				+ ", area = " 
-				+ this.getArea() + "]";
+				+ this.getArea() 
+				+ Triangle.getCounter() + "]";
 	}
 
 	public int getBase() {
