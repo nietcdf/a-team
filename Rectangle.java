@@ -6,16 +6,16 @@ public class Rectangle extends Shape{
         this(0.0f, 0.0f);
     }
 
-    // to do this? YES
     public Rectangle(float width, float height){
         this.width = width;
         this.height = height;
+        super.area = getArea();
     }
 
-
+    // let us analyze this
     public float getArea() {
-        area =  width * height;
-        return area;
+        //area =  width * height;
+        return width * height;
     }
 
 

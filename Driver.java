@@ -38,10 +38,24 @@ public class Driver {
 
 	ArrayList<Rectangle> recs = new ArrayList<>();
 	for (int i = 0; i < 5; ++i){
-		recs.add(new Rectangle(2.0f, 4.0f));
+		Rectangle r = new Rectangle(i+1.0f, 4.0f);
+		recs.add(r);
 	}
 
-	recs.forEach(p -> System.out.println(p));
+	// lambda expression
+	recs.forEach(p -> System.out.println(p.toString()));
+
+	//Shape x = new Shape();
+	ArrayList<Object> shapes = new ArrayList<>();
+	Triangle tt = new Triangle(2.0f, 3.0f);
+	Rectangle rr = new Rectangle(2.0f, 3.0f);
+	A a = new A(1);
+	shapes.add(tt);
+	shapes.add(rr);
+	shapes.add(a);
+	// we have to make sure that we only call methods that come
+	// with Object class
+	shapes.forEach(s -> System.out.println(s));
 }
 
 }
