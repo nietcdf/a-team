@@ -12,8 +12,9 @@ public class Driver {
 		return n;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MyLengthException {
 		
+		/*
 		// This here is:
 		// default no-args constructor
 		System.out.println("Initial: " + Triangle.getCounter());
@@ -56,9 +57,25 @@ public class Driver {
 	// we have to make sure that we only call methods that come
 	// with Object class
 	shapes.forEach(s -> System.out.println(s));
+	*/
 
-	Triangle bermuda = new Triangle(-1.0f, 2.0f);
-	System.out.println(bermuda.getArea());
+		try {
+			Triangle bermuda = new Triangle(-1.0f, 2.0f);
+			System.out.println(bermuda.getArea());
+
+			Triangle golden = new Triangle(1.0f, -2.0f);
+			System.out.println(golden.getArea());
+
+			Triangle x = new Triangle(-1.0f, -2.0f);
+			System.out.println(x.getArea());
+		} catch (MyLengthException e) {
+			System.out.println("Super-group is exceptional");
+		} catch (Exception ex) {
+			System.out.println("A-Team is trying to catch-up");
+			ex.printStackTrace();
+
+		}
+
 }
 
 }
