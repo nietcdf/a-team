@@ -56,6 +56,9 @@ public class Driver {
 	// we have to make sure that we only call methods that come
 	// with Object class
 	shapes.forEach(s -> System.out.println(s));
+
+	Triangle bermuda = new Triangle(-1.0f, 2.0f);
+	System.out.println(bermuda.getArea());
 }
 
 }
